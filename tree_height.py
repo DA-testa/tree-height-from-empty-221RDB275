@@ -25,7 +25,7 @@ def calculate_height(height, poz, parents):
 def main():
     input_type = input()
     if input_type[0] == 'F':
-        file_name = input
+        file_name = input()
         if 'a' in file_name():
            return
         else:
