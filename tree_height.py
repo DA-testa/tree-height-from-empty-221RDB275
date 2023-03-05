@@ -26,7 +26,7 @@ def main():
     input_type = input()
     if input_type[0] == 'F':
         file_name = input()
-        if 'a' in file_name():
+        if 'a' in file_name:
            return
         else:
             path = "./test/" + file_name
