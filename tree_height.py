@@ -5,6 +5,7 @@ import numpy
 
 def compute_height(n, parents):
     height = numpy.zeros(n, dtype=int)
+    start = None
     for i in range(n):
         if parents[i] == -1:
             start = i
@@ -27,8 +28,9 @@ def main():
         file_name = input
         if 'a' in file_name():
            return
-        else:   
-            with open("./test/" + file_name) as test:
+        else:
+            path = "./test/" + file_name
+            with open(path) as test:
                 input_type = test.readlines()
             n = int(input_type[0].replace('\n'))
             parents = input_type[1].replace('\n').split(" ")
