@@ -30,7 +30,7 @@ def main():
            return
         else:
             path = "./test/" + file_name
-            with open(path) as test:
+            with open(path, 'r', encoding = 'utf-8') as test:
                 input_type = test.readlines()
             n = int(input_type[0].replace('\n',''))
             parents = input_type[1].replace('\n','').split(" ")
